@@ -1,0 +1,16 @@
+YoY Attrition Count % = 
+VAR CurrentYearCount =
+    [Attrition Count]
+VAR PreviousYearCount =
+    CALCULATE (
+        [Attrition Count],
+        DATEADD ( 'Date'[Date], -1, YEAR )
+    )
+VAR DiffPercent =
+    DIVIDE ( CurrentYearCount - PreviousYearCount, PreviousYearCount )
+VAR Icon =
+    IF ( DiffPercent > 0, "🔼",
+        IF ( DiffPercent < 0, "🔻", "➖")
+    )
+RETURN
+    Icon & " " & FORMAT ( DiffPercent, "0.00%" )
