@@ -1,0 +1,10 @@
+Date = 
+ADDCOLUMNS(
+    CALENDAR(DATE(2020, 1, 1), DATE(2025, 12, 31)),
+    "Year", YEAR([Date]),
+    "Month Number", MONTH([Date]),
+    "Month Name", FORMAT([Date], "MMMM"),
+    "Month-Year", FORMAT([Date], "mmm yyyy"),
+    "Quarter", "Q" & FORMAT([Date], "Q"),
+    "Year-Month Sort", YEAR([Date]) * 100 + MONTH([Date])
+)
