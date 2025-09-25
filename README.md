@@ -72,6 +72,13 @@ You can interact with the live visualization [HERE](https://app.powerbi.com/grou
 - Average tenure fell below one year in 2025, showing that newer employees are not staying long.
 
 - Attrition occurred across all job satisfaction levels, suggesting that factors beyond satisfaction, such as pay, growth opportunities, or organizational stability, play a major role.
+
+- Travel_Rarely' has noticeably more Attrition Count
+  
+- There is a correlation between Overall Attrition Rate and Daily Rate.
+
+- Single' has noticeably more Overall Attrition Rate
+
 #
 ### Recommendation
 - Review compensation policies to ensure salaries remain competitive with the market.
